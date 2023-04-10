@@ -75,4 +75,31 @@ function createPerson(name, age) {
     },
   };
 }
-module.exports = { createCounter, createPerson };
+
+// ===== ES6 Class ===== //
+//Objective: Write an ES6 class for a bank account that encapsulates the account balance and provides publicly accessible methods to deposit and withdraw funds.
+class BankAccount {
+  constructor(balance) {
+    this._balance = balance;
+  }
+
+  deposit(amount) {
+    if (amount < 0) {
+      throw new Error("Invalid amount");
+    }
+    this._balance += amount;
+  }
+
+  withdraw(amount) {
+    if (amount < 0 || amount > this._balance) {
+      throw new Error("Invalid amount");
+    }
+    this._balance -= amount;
+  }
+
+  getBalance() {
+    return this._balance;
+  }
+}
+
+module.exports = { createCounter, createPerson, BankAccount };
