@@ -42,3 +42,37 @@ console.log(john.getBirthYear()); // Output: 1988
 //This is because the getBirthYear() method is encapsulated within the class and its details are hidden from the rest of the program.
 // Encapsulation also helps prevent unintended modification of the object's state by external code,
 //ensuring that the object's data remains consistent and valid.
+
+// ===== Closure ===== //
+//Objective: Write a createCounter function that returns an object with three methods (increment, decrement, and getCount)
+//that allow you to increment and decrement a counter and get its current count.
+function createCounter() {
+  let count = 0;
+
+  return {
+    increment() {
+      count++;
+    },
+    decrement() {
+      count--;
+    },
+    getCount() {
+      return count;
+    },
+  };
+}
+
+// ===== Factory Function ===== //
+//Objective: Write a factory function that returns an object with two properties (name and age) and two methods (getName and getAge)
+//that allow you to get the name and age of the object.
+function createPerson(name, age) {
+  return {
+    getName() {
+      return name;
+    },
+    getAge() {
+      return age;
+    },
+  };
+}
+module.exports = { createCounter, createPerson };

@@ -1,0 +1,22 @@
+{
+  "name": "oop-examples",
+  "version": "1.0.0",
+  "description": "oop-lesson",
+  "main": "encapsulation.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StephanieRuthJones/oop-examples.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StephanieRuthJones/oop-examples/issues"
+  },
+  "homepage": "https://github.com/StephanieRuthJones/oop-examples#readme",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
